@@ -20,22 +20,34 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=QgQIgT"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=QgQIgT" type="text/css">
 
   <style>
-    body, html {
-      /* Sets the background to your texture image */
-      background-image: url('assets/padding.jpg'); 
+    /* Target the absolute root of the document */
+    html {
+      /* Try both paths just in case it's in the images folder */
+      background-image: url('assets/padding.jpg') !important; 
+      background-repeat: repeat !important; 
+      background-size: auto !important; 
       
-      /* Tiles the image natively so it isn't stretched or distorted */
-      background-repeat: repeat; 
-      background-size: auto; 
+      /* Fixes the background to the viewport so it never runs out when scrolling */
+      background-attachment: fixed !important; 
       
-      /* Ensures the background covers at least the full viewport height */
-      min-height: 100vh; 
-      margin: 0;
+      /* Fallback color: if the image path is broken, it will show this beige instead of stark white */
+      background-color: #f4e6d4 !important; 
+      
+      min-height: 100vh !important; 
     }
     
-    /* Makes sure sections don't render a solid white background over the texture */
-    section {
+    /* Make sure the body is completely transparent so the HTML background shows through */
+    body {
+      background: transparent !important;
+      min-height: 100vh !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    /* Strip away any default white backgrounds Mobirise tries to apply to its wrappers */
+    section, .image-block, .cid-voyAn1nJQ2, .cid-voyAqMLYUy {
       background-color: transparent !important;
+      background-image: none !important;
     }
   </style>
   
@@ -46,13 +58,13 @@
     <div class="image-block m-auto">
         <img src="assets/images/1-2.jpg" alt="">
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="image03 cid-voyAqMLYUy" id="image04-g">
+  <section data-bs-version="5.1" class="image03 cid-voyAqMLYUy" id="image04-g">
     <div class="image-block m-auto">
         <a href="https://www.instagram.com/corvesapien/" target="_blank"><img src="assets/images/2.jpg" alt=""></a>
     </div>
-</section>
+  </section>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
   <script src="assets/smoothscroll/smooth-scroll.js"></script>  
