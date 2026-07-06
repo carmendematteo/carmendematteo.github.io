@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
@@ -29,18 +28,36 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=a1Eqnf" type="text/css">
 
   <style>
-html {
-  margin:0;
-  padding:0;
-  min-height:100%;
-  background: url('assets/images/Padding.jpg') repeat top center;
-  background-size:auto;
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: url('assets/images/Padding.jpg') repeat top center !important;
+  background-size: auto !important;
 }
-body{
-  margin:0;
-  padding:0;
-  min-height:100vh;
-  background:transparent;
+
+body {
+  min-height: 100vh;
+}
+
+/* Force all Mobirise wrapper blocks to be transparent so Padding.jpg shows through everywhere */
+section, 
+.cid-voyAn1nJQ2, 
+.cid-voyAqMLYUy, 
+.image-block {
+  background: transparent !important;
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure images maintain their full aspect ratio without forcing zoomed crops */
+.image-block img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
 }
 </style>
 
