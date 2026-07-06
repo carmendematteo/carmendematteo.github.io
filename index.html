@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
@@ -28,19 +29,21 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=a1Eqnf" type="text/css">
 
   <style>
+/* This block explicitly overrides Mobirise's hidden stretch settings */
 html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100% !important;
   background: url('assets/images/Padding.jpg') repeat top center !important;
-  background-size: auto !important;
+  background-size: auto !important; /* Stops the texture from stretching and pixelating */
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100vh !important;
+  background-color: transparent !important;
 }
 
-/* Force all Mobirise wrapper blocks to be transparent so Padding.jpg shows through everywhere */
+/* Forces all structural block elements to be clear so the background tiles seamlessly */
 section, 
 .cid-voyAn1nJQ2, 
 .cid-voyAqMLYUy, 
@@ -52,11 +55,11 @@ section,
   margin: 0 auto !important;
 }
 
-/* Ensure images maintain their full aspect ratio without forcing zoomed crops */
+/* Keeps your main content images crisp and proportional without zoom updates */
 .image-block img {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto !important;
 }
 </style>
